@@ -1,0 +1,32 @@
+{
+  "name": "soap-client-utils",
+  "main": "lib/soap-client-utils.js",
+  "version": "0.0.0",
+  "description": "Utilities for SOAP clients that use node-soap.",
+  "author": "Joseph Spencer",
+  "scripts": {
+    "jshint": "jshint lib && jshint --config .jshintrc-test test",
+    "mocha": "mocha -w",
+    "integration": "mocha './integration/*.js'",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "report": "istanbul report cobertura",
+    "test": "npm run jshint && npm run cover && npm run integration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godaddy/node-soap-client-utils.git"
+  },
+  "keywords": [],
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godaddy/node-soap-client-utils/issues"
+  },
+  "devDependencies": {
+    "should": "~3.3.0",
+    "jshint": "~2.5.0",
+    "istanbul": "~0.2.7",
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {}
+}
